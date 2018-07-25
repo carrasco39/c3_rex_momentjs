@@ -1,0 +1,186 @@
+﻿{
+	"custom": {
+		"conditions": [
+			{
+				"id": "is-valid",
+				"c2id": "1",
+				"scriptName": "DateStringIsValid",
+				"highlight": true,
+				"params": [
+					{
+						"id": "date",
+						"type": "string"
+					},
+					{
+						"id": "format",
+						"type": "string"
+					},
+					{
+						"id": "strict-mode",
+						"type": "combo",
+						"items": [
+							"",
+							" strict"
+						],
+						"initialValue": "0"
+					}
+				]
+			},
+			{
+				"id": "is-leap-year",
+				"c2id": "2",
+				"scriptName": "IsLeapYear",
+				"highlight": true
+			}
+		],
+		"actions": [
+			{
+				"id": "current-date",
+				"c2id": "1",
+				"scriptName": "SetToCurrentDate",
+				"highlight": true
+			},
+			{
+				"id": "unix-timestamp",
+				"c2id": "2",
+				"scriptName": "SetFromUnixTimestamp",
+				"highlight": true,
+				"params": [
+					{
+						"id": "unix-timestamp",
+						"type": "number",
+						"initialValue": "0"
+					}
+				]
+			},
+			{
+				"id": "date-string",
+				"c2id": "3",
+				"scriptName": "SetFromString",
+				"highlight": true,
+				"params": [
+					{
+						"id": "date",
+						"type": "string",
+						"initialValue": "2018-01-01"
+					},
+					{
+						"id": "format",
+						"type": "string"
+					}
+				]
+			},
+			{
+				"id": "clone",
+				"c2id": "4",
+				"scriptName": "Clone",
+				"highlight": true,
+				"params": [
+					{
+						"id": "moment",
+						"type": "object"
+					}
+				]
+			},
+			{
+				"id": "set-component",
+				"c2id": "5",
+				"scriptName": "SetComponent",
+				"params": [
+					{
+						"id": "amount",
+						"type": "number",
+						"initialValue": "0"
+					},
+					{
+						"id": "type",
+						"type": "combo",
+						"items": [
+							"years",
+							"quarters",
+							"months",
+							"weeks",
+							"days",
+							"hours",
+							"minutes",
+							"seconds",
+							"milliseconds"
+						]
+					}
+				]
+			},
+			{
+				"id": "add-to",
+				"c2id": "11",
+				"scriptName": "Add",
+				"params": [
+					{
+						"id": "amount",
+						"type": "number",
+						"initialValue": "0"
+					},
+					{
+						"id": "type",
+						"type": "combo",
+						"items": [
+							"years",
+							"quarters",
+							"months",
+							"weeks",
+							"days",
+							"hours",
+							"minutes",
+							"seconds",
+							"milliseconds"
+						]
+					}
+				]
+			},
+			{
+				"id": "add-num-to",
+				"c2id": "12",
+				"scriptName": "Add",
+				"params": [
+					{
+						"id": "amount",
+						"type": "number",
+						"initialValue": "0"
+					},
+					{
+						"id": "type",
+						"type": "any",
+						"initialValue": "\"\""
+					}
+				]
+			},
+			{
+				"id": "set-locale",
+				"c2id": "101",
+				"scriptName": "SetLocale",
+				"params": [
+					{
+						"id": "locale",
+						"type": "string",
+						"initialValue": ""
+					}
+				]
+			}
+
+		],
+		"expressions": [
+			{
+				"id": "double",
+				"expressionName": "Double",
+				"scriptName": "Double",
+				"highlight": true,
+				"returnType": "number",
+				"params": [
+					{
+						"id": "number",
+						"type": "number"
+					}
+				]
+			}
+		]
+	}
+}

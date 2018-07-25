@@ -1,0 +1,17 @@
+﻿{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "Moment",
+	"id": "Rex_MomenJS",
+	"version": "0.1",
+	"author": "Rex.Rainbow",
+	"website": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/rex_momenjs.html",
+	"documentation": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/rex_momenjs.html",
+	"description": "Parse, validate, manipulate, and display dates. http://momentjs.com/",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js",
+						"moment-with-locales.min.js"
+					]
+}
