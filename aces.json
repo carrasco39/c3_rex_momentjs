@@ -9,11 +9,13 @@
 				"params": [
 					{
 						"id": "date",
-						"type": "string"
+						"type": "string",
+						"initialValue": "2018-07-26"
 					},
 					{
 						"id": "format",
-						"type": "string"
+						"type": "string",
+						"initialValue": "YYYY-MM-DD"
 					},
 					{
 						"id": "strict-mode",

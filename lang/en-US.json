@@ -4,47 +4,65 @@
 	"text": {
 		"plugins": {
 			"rex_momenjs": {
-				"name": "Rex_MomenJS",
+				"name": "Moment",
 				"description": "This is a plugin for the use of Momentjs",
-				"help-url": "https://www.momentjs.com",
-				"properties": {
-					"test-property": {
-						"name": "Test property",
-						"desc": "A test number property. Displayed by 'Alert' action."
-					}
-				},
-				"aceCategories": {
-					"custom": "Custom"
-				},
-				"conditions": {
-					"is-large-number": {
-						"list-name": "Is large number",
-						"display-text": "[i]{0}[/i] is a large number",
-						"description": "Test if a number is greater than 100.",
-						"params": {
-							"number": {
-								"name": "Number",
-								"desc": "Number to test if greater than 100."
-							}
+				"help-url": "https://www.momentjs.com"
+			},
+			"aceCategories": {
+				"custom": "Custom"
+			},
+			"conditions": {
+				"is-valid": {
+					"list-name": "Is Valid",
+					"display-text": "[i]{0}[/i][i]{1}[/i][i]{2}[/i] is valid",
+					"description": "return true if data string is valid.",
+					"params": {
+						"date": {
+							"name": "Date",
+							"desc": "Date string"
+						},
+						"format": {
+							"name": "Format",
+							"desc": "Date String. Set to \"\" to ignore format setting"
+						},
+						"strict-mode": {
+							"name": "Strict mode",
+							"desc": "Strict mode"
 						}
 					}
 				},
-				"actions": {
-					"do-alert": {
-						"list-name": "Do alert",
-						"display-text": "Do alert",
-						"description": "Do a dummy alert."
-					}
+				"is-leap-year": {
+					"list-name": "Leap year",
+					"display-text": "Is leap year",
+					"description": "return true if data string is leap year."
+				}
+			},
+			"actions": {
+				"current-date": {
+					"list-name": "Current Date",
+					"display-text": "Set current date",
+					"description": "Set date to current date."
 				},
-				"expressions": {
-					"double": {
-						"description": "Double a number.",
-						"translated-name": "Double",
-						"params": {
-							"number": {
-								"name": "Number",
-								"desc": "The number to double."
-							}
+				"unix-timestamp": {
+					"list-name": "Unix timestamp",
+					"display-text": "Set date to [i]{0}[/i]",
+					"description": "Set date from unix timestamp",
+					"params": {
+						"unix-timestamp": {
+							"name": "Unix timestamp",
+							"desc": "Unix timestamp"
+						}
+					}
+				}
+			},
+			"expressions": {
+				"double": {
+					"description": "Double a number.",
+					"translated-name": "Double",
+					"params": {
+						"number": {
+							"name": "Number",
+							"desc": "The number to double."
 						}
 					}
 				}
