@@ -23,7 +23,7 @@
 		{
 			super(PLUGIN_ID);
 			
-			SDK.Lang.PushContext("plugins.Rex_MomenJS");
+			SDK.Lang.PushContext("plugins.rex_momenjs");
 			
 			this._info.SetName(lang(".name"));
 			this._info.SetDescription(lang(".description"));

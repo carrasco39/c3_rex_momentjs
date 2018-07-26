@@ -169,17 +169,383 @@
 		],
 		"expressions": [
 			{
-				"id": "double",
-				"expressionName": "Double",
-				"scriptName": "Double",
+				"id": "get-year",
+				"c2id": "1",
+				"expressionName": "Year",
+				"scriptName": "Year",
+				"highlight": true,
+				"returnType": "number"
+			},
+			{
+				"id": "get-month",
+				"c2id": "2",
+				"expressionName": "Month",
+				"scriptName": "Month",
+				"highlight": true,
+				"returnType": "number"
+			},
+			{
+				"id": "get-date",
+				"c2id": "3",
+				"expressionName": "Date",
+				"scriptName": "Date",
+				"highlight": true,
+				"returnType": "number"
+			},
+			{
+				"id": "get-day",
+				"c2id": "4",
+				"expressionName": "Day",
+				"scriptName": "Day",
+				"highlight": true,
+				"returnType": "number"
+			},
+			{
+				"id": "get-hours",
+				"c2id": "5",
+				"expressionName": "Hours",
+				"scriptName": "Hours",
+				"highlight": true,
+				"returnType": "number"
+			},
+			{
+				"id": "get-minutes",
+				"c2id": "6",
+				"expressionName": "Minutes",
+				"scriptName": "Minutes",
+				"highlight": true,
+				"returnType": "number"
+			},
+			{
+				"id": "get-seconds",
+				"c2id": "7",
+				"expressionName": "Seconds",
+				"scriptName": "Seconds",
+				"highlight": true,
+				"returnType": "number"
+			},
+			{
+				"id": "get-milliseconds",
+				"c2id": "8",
+				"expressionName": "Milliseconds",
+				"scriptName": "Milliseconds",
+				"highlight": true,
+				"returnType": "number"
+			},
+			{
+				"id": "get-unix-timestamp",
+				"c2id": "9",
+				"expressionName": "UnixTimestamp",
+				"scriptName": "UnixTimestamp",
+				"highlight": true,
+				"returnType": "number"
+			},
+			{
+				"id": "get-quarter",
+				"c2id": "10",
+				"expressionName": "Quarter",
+				"scriptName": "Quarter",
+				"highlight": true,
+				"returnType": "number"
+			},
+			{
+				"id": "get-format-date-string",
+				"c2id": "11",
+				"expressionName": "Format",
+				"scriptName": "Format",
+				"highlight": true,
+				"returnType": "string"
+			},
+			{
+				"id": "get-iso-date-string",
+				"c2id": "12",
+				"expressionName": "ISO",
+				"scriptName": "ISO",
+				"highlight": true,
+				"returnType": "string"
+			},
+			{
+				"id": "get-days-in-month",
+				"c2id": "21",
+				"expressionName": "DaysInMonth",
+				"scriptName": "DaysInMonth",
+				"highlight": true,
+				"returnType": "number"
+			},
+			{
+				"id": "get-elapsed-years",
+				"c2id": "31",
+				"expressionName": "ElapsedYears",
+				"scriptName": "ElapsedYears",
 				"highlight": true,
 				"returnType": "number",
+				"isVariadicParameters": true,
 				"params": [
 					{
-						"id": "number",
-						"type": "number"
+						"id": "previous",
+						"type": "any"
 					}
 				]
+			},
+			{
+				"id": "get-elapsed-month",
+				"c2id": "32",
+				"expressionName": "ElapsedMonths",
+				"scriptName": "ElapsedMonths",
+				"highlight": true,
+				"returnType": "number",
+				"isVariadicParameters": true,
+				"params": [
+					{
+						"id": "previous",
+						"type": "any"
+					}
+				]
+			},
+			{
+				"id": "get-elapsed-days",
+				"c2id": "33",
+				"expressionName": "ElapsedDays",
+				"scriptName": "ElapsedDays",
+				"highlight": true,
+				"returnType": "number",
+				"isVariadicParameters": true,
+				"params": [
+					{
+						"id": "previous",
+						"type": "any"
+					}
+				]
+			},
+			{
+				"id": "get-elapsed-hours",
+				"c2id": "34",
+				"expressionName": "ElapsedHours",
+				"scriptName": "ElapsedHours",
+				"highlight": true,
+				"returnType": "number",
+				"isVariadicParameters": true,
+				"params": [
+					{
+						"id": "previous",
+						"type": "any"
+					}
+				]
+			},
+			{
+				"id": "get-elapsed-minutes",
+				"c2id": "35",
+				"expressionName": "ElapsedMinutes",
+				"scriptName": "ElapsedMinutes",
+				"highlight": true,
+				"returnType": "number",
+				"isVariadicParameters": true,
+				"params": [
+					{
+						"id": "previous",
+						"type": "any"
+					}
+				]
+			},
+			{
+				"id": "get-elapsed-seconds",
+				"c2id": "36",
+				"expressionName": "ElapsedSeconds",
+				"scriptName": "ElapsedSeconds",
+				"highlight": true,
+				"returnType": "number",
+				"isVariadicParameters": true,
+				"params": [
+					{
+						"id": "previous",
+						"type": "any"
+					}
+				]
+			},
+			{
+				"id": "get-elapsed-milliseconds",
+				"c2id": "37",
+				"expressionName": "ElapsedMilliseconds",
+				"scriptName": "ElapsedMilliseconds",
+				"highlight": true,
+				"returnType": "number",
+				"isVariadicParameters": true,
+				"params": [
+					{
+						"id": "previous",
+						"type": "any"
+					}
+				]
+			},
+			{
+				"id": "get-start-year",
+				"c2id": "41",
+				"expressionName": "StartOfYear",
+				"scriptName": "StartOfYear",
+				"highlight": true,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"id": "get-start-month",
+				"c2id": "42",
+				"expressionName": "StartOfMonth",
+				"scriptName": "StartOfMonth",
+				"highlight": true,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"id": "get-start-quarter",
+				"c2id": "43",
+				"expressionName": "StartOfYear",
+				"scriptName": "StartOfYear",
+				"highlight": true,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"id": "get-start-week",
+				"c2id": "44",
+				"expressionName": "StartOfWeek",
+				"scriptName": "StartOfWeek",
+				"highlight": true,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"id": "get-start-date",
+				"c2id": "45",
+				"expressionName": "StartOfDate",
+				"scriptName": "StartOfDate",
+				"highlight": true,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"id": "get-start-hour",
+				"c2id": "46",
+				"expressionName": "StartOfHour",
+				"scriptName": "StartOfHour",
+				"highlight": true,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"id": "get-start-minute",
+				"c2id": "47",
+				"expressionName": "StartOfMinute",
+				"scriptName": "StartOfMinute",
+				"highlight": true,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"id": "get-start-second",
+				"c2id": "48",
+				"expressionName": "StartOfSecond",
+				"scriptName": "StartOfSecond",
+				"highlight": true,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"id": "get-start-isoweek",
+				"c2id": "49",
+				"expressionName": "StartOfISOWeek",
+				"scriptName": "StartOfISOWeek",
+				"highlight": true,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"id": "get-end-year",
+				"c2id": "51",
+				"expressionName": "EndOfYear",
+				"scriptName": "EndOfYear",
+				"highlight": true,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"id": "get-end-month",
+				"c2id": "52",
+				"expressionName": "EndOfMonth",
+				"scriptName": "EndOfMonth",
+				"highlight": true,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"id": "get-end-quarter",
+				"c2id": "53",
+				"expressionName": "EndOfYear",
+				"scriptName": "EndOfYear",
+				"highlight": true,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"id": "get-end-week",
+				"c2id": "54",
+				"expressionName": "EndOfWeek",
+				"scriptName": "EndOfWeek",
+				"highlight": true,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"id": "get-end-date",
+				"c2id": "55",
+				"expressionName": "EndOfDate",
+				"scriptName": "EndOfDate",
+				"highlight": true,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"id": "get-end-hour",
+				"c2id": "56",
+				"expressionName": "EndOfHour",
+				"scriptName": "EndOfHour",
+				"highlight": true,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"id": "get-end-minute",
+				"c2id": "57",
+				"expressionName": "EndOfMinute",
+				"scriptName": "EndOfMinute",
+				"highlight": true,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"id": "get-end-second",
+				"c2id": "58",
+				"expressionName": "",
+				"scriptName": "EndOfSecond",
+				"highlight": true,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"id": "get-end-isoweek",
+				"c2id": "59",
+				"expressionName": "EndOfISOWeek",
+				"scriptName": "EndOfISOWeek",
+				"highlight": true,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"id": "get-locale",
+				"c2id": "101",
+				"expressionName": "Locale",
+				"scriptName": "Locale",
+				"highlight": true,
+				"returnType": "string"
 			}
 		]
 	}

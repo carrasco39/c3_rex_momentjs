@@ -1,12 +1,12 @@
 ﻿{
 	"languageTag": "en-US",
-	"fileDescription": "Strings for MyCustomPlugin.",
+	"fileDescription": "Strings for Rex_MomenJS.",
 	"text": {
 		"plugins": {
-			"mycustomplugin": {
-				"name": "MyCustom",
-				"description": "Testing a custom third-party plugin.",
-				"help-url": "https://www.scirra.com",
+			"rex_momenjs": {
+				"name": "Rex_MomenJS",
+				"description": "This is a plugin for the use of Momentjs",
+				"help-url": "https://www.momentjs.com",
 				"properties": {
 					"test-property": {
 						"name": "Test property",
